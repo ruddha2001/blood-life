@@ -1,0 +1,38 @@
+{
+    "en-US": {
+        "translation": {
+            "start.narration": "Welcome Shinobi. Would you like to play Blood Life?",
+            "start.reprompt": "Would you like to play Blood Life?",
+            "utterance-yes": "yes",
+            "utterance-yeah": "yeah",
+            "utterance-yups": "yups",
+            "utterance-okay": "okay",
+            "utterance-let's go": "let's go",
+            "utterance-no": "no",
+            "utterance-not now": "not now",
+            "utterance-close": "close",
+            "utterance-quit": "quit",
+            "utterance-exit": "exit",
+            "runner.narration": "The Shinobi of the Great Fire Nation have fought; and lost. The power of the Dark Dragon is too great to be defeated by mere humans. The world as we know is on the verge of dying out under the ruthless rampage of the evil Dark Dragon. But, there is a tiny ray of hope. The Master Scroll, which has the power to seal the Dark Dragon into oblivion is rumoured to be found in the Island of Death. The Shinobi Council has chosen you as the one to retrieve the Master Scroll and save the world! You start your journey and reach the shores of the Known Land. Now, would you tavel to the Northern Lands or go to the Southern Temple?",
+            "runner.reprompt": "Would you like to go the Northern Lands or the Southern Temple?",
+            "utterance-Northern Lands": "Northern Lands",
+            "utterance-lands": "lands",
+            "utterance-north": "north",
+            "utterance-first": "first",
+            "utterance-Southern Temple": "Southern Temple",
+            "utterance-temple": "temple",
+            "utterance-south": "south",
+            "utterance-second": "second",
+            "northern lands.narration": "You have reached the Northern Lands, where it is always snowing and the Sun never rises.",
+            "southern temple.narration": "You have reached the Southern Temple, where the Wind is ever active to show its power.",
+            "resume.narration": "Welcome back to your Great Shinobi Adventure. Would you like to pick up where you left?",
+            "utterance-start over": "start over",
+            "utterance-restart": "restart",
+            "utterance-repeat": "repeat",
+            "utterance-help": "help",
+            "pause.narration": "The adventure has been paused. We await your return the Great Shinobi.",
+            "end.narration": "It was a pleasure to have you Shinobi. Until next time.",
+            "help.narration": "Here's the help menu. Make choices to navigate the story or you can tell me to start over or stop. Picking up where you left off."
+        }
+    }
+}

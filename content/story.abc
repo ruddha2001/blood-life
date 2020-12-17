@@ -1,0 +1,81 @@
+@start
+  *say
+    Welcome Shinobi. Would you like to play Blood Life?
+    *reprompt
+    Would you like to play Blood Life?
+    *then
+    clear all
+    hear yes, yeah, yups, okay, let's go{
+    -> runner
+    }
+    hear no, not now, close, quit, exit{
+    -> end
+    }
+
+@runner
+    *say
+    The Shinobi of the Great Fire Nation have fought; and lost. The power of the Dark Dragon is too great to be defeated by mere humans. The world as we know is on the verge of dying out under the ruthless rampage of the evil Dark Dragon. But, there is a tiny ray of hope. The Master Scroll, which has the power to seal the Dark Dragon into oblivion is rumoured to be found in the Island of Death. The Shinobi Council has chosen you as the one to retrieve the Master Scroll and save the world! You start your journey and reach the shores of the Known Land. Now, would you tavel to the Northern Lands or go to the Southern Temple?
+    *reprompt
+    Would you like to go the Northern Lands or the Southern Temple?
+    *then
+    hear Northern Lands, lands, north, first{
+    -> northern lands
+    }
+    hear Southern Temple, temple, south, second{
+    -> southern temple
+    }
+    
+@northern lands
+    *say
+    You have reached the Northern Lands, where it is always snowing and the Sun never rises. Aniruddha is busy so the next journey needs to wait.
+    *then
+    -> end
+
+@southern temple
+    *say
+    You have reached the Southern Temple, where the Wind is ever active to show its power. Aniruddha is busy so the next journey needs to wait.
+    
+@resume
+    *say
+    Welcome back to your Great Shinobi Adventure. Would you like to pick up where you left?
+    *then
+	hear yes {
+	>> RESUME
+	}
+	hear no {
+	>> RESTART
+	}
+	
+@global append
+    *then
+    hear start over, restart {
+    >> RESTART
+    }
+    hear repeat {
+    >> REPEAT
+    }
+    hear help {
+    -> help
+    }
+    if !helped {
+        hear * {
+        -> help
+        }
+    }
+	
+@pause
+	*say
+	The adventure has been paused. We await your return the Great Shinobi.
+	*then
+	>> PAUSE
+
+@end
+    *say
+    It was a pleasure to have you Shinobi. Until next time.
+    
+@help
+    *say
+        Here's the help menu. Make choices to navigate the story or you can tell me to start over or stop. Picking up where you left off. 
+    *then
+        flag helped
+        >> BACK
